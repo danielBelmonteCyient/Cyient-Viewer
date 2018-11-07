@@ -1,0 +1,23 @@
+<div [style.display]="this.isLayerControlVisible ? 'block' : 'none'" class="panel" id='main-panel'>
+  <button type="button" class="close" (click)="openSearchFiltering()">
+          <span id="closing">&times;</span>
+  </button>
+  <div class="panel-body">
+    <div class="col-lg-4 col-sm-6 col-lg-push-3 col-sm-push-6">
+      <div class="well wd-wide">
+          <form>
+              <!-- <input class="form-control" #filter (keyup)="filterNodes(filter.value, tree)" placeholder="filter nodes" /> -->
+          </form>
+              <!-- <tree-root #tree [nodes]="nodes" [focused]="true" [options]="customTemplateStringOptions" (onEvent)="onEvent($event)">
+                      <ng-template #treeNodeTemplate let-node>
+                          <a class="title">{{ node.data.name }}</a>
+                          <div>{{ node.data.crop }} · {{ node.data.area }}</div>
+                      </ng-template>
+              </tree-root> -->
+      </div>        
+    </div>
+  </div>
+</div>
+<button [style.display]="!this.isLayerControlVisible ? 'block' : 'none'" type="button"
+class="mat-mini-fab fas fa-layer-group">
+</button>  

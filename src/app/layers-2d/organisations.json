@@ -1,0 +1,96 @@
+
+{
+	"orgs": [
+			{
+			"org": "Cyient Reading", 
+			"orgID": "4yy82yroihljkafjvhvMFVMN",
+			"created": 78617864786,
+			"layers": [
+					{	
+						"layerType": "TileWMS",
+						"id": 0,
+						"name":"National-Map",
+						"source": {
+							"url": "https://viageo.cyienteurope.com/geoserver/cropsense/wms?",
+							"params": {"LAYERS": "cropsense:UK", "TILED": true},
+							"serverType": "geoserver",
+							"transition": 0	
+							},
+						"visible": false,
+						"disable": false
+						},
+					{	
+						"layerType": "TileWMS",
+						"id": 1,
+						"name":"IM-False-Color",
+						"source": {
+							"url": "https://viageo.cyienteurope.com/geoserver/cropsense/wms?",
+							"params": {"LAYERS": "cropsense:FALSE", "TILED": true},
+							"serverType": "geoserver",
+							"transition": 0	
+							},
+						"visible": false,
+						"disable": false
+						},
+						{	
+							"layerType": "TileWMS",
+							"id": 2,
+							"name":"IM-RGB-Color",
+							"source": {
+								"url": "https://viageo.cyienteurope.com/geoserver/cropsense/wms?",
+								"params": {"LAYERS": "cropsense:RGB", "TILED": true},
+								"serverType": "geoserver",
+								"transition": 0	
+								},
+							"visible": false,
+							"disable": false
+							},							
+					{
+						"layerType": "TileWMS",
+						"id": 3,
+						"name":"Ac66-health",
+						"source": {
+							"url": "https://viageo.cyienteurope.com/geoserver/cropsense/wms?",
+							"params": {"LAYERS": "cropsense:grid_hex_ac66_SPJOIN_NGC", "TILED": true},
+							"serverType": "geoserver",
+							"transition": 0	
+							},
+						"visible": true,
+						"disable": true,
+						"maxResolution": 8	
+						},
+					{
+						"layerType": "TileWMS",
+						"id": 4,
+						"name":"Ac67-health",
+						"source": {
+							"url": "https://viageo.cyienteurope.com/geoserver/cropsense/wms?",
+							"params": {"LAYERS": "cropsense:grid_hex_ac67_SPJOIN_NGC", "TILED": true},
+							"serverType": "geoserver",
+							"transition": 0	
+							},
+						"visible": true,
+						"disable": true,
+						"maxResolution": 8	
+						},
+					{
+						"layerType": "VectorSource",
+						"id": 5,
+						"name":"Crops-parcels",
+						"url": "https://viageo.cyienteurope.com/geoserver/cropsense/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cropsense%3AAc66_Ac67_gt_parcels&maxFeatures=50&outputFormat=application%2Fjson",
+						"visible": true,
+						"disable": false,
+						"minResolution": 8	
+						},
+					{
+						"layerType": "VectorSource",
+						"id": 6,
+						"name":"Crops-Images",
+						"url": "https://viageo.cyienteurope.com/geoserver/cropsense/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cropsense%3Acentroid_parcels_4326&maxFeatures=50&outputFormat=application%2Fjson",
+						"visible": true,
+						"disable": false
+						}				
+				]
+			}
+		]	
+}

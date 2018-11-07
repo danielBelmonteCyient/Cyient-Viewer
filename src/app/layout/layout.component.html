@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <!-- top navbar-->
+    <app-header class="topnavbar-wrapper"></app-header>
+    <!-- sidebar-->
+    <app-sidebar [modal]="modal" class="aside"></app-sidebar>
+    <!-- offsidebar-->
+    <!-- <app-offsidebar class="offsidebar"></app-offsidebar> -->
+    <!-- Main section-->
+    <section>
+        <div class="content-wrapper">
+            <!-- Modal component (test) -->
+            <app-modal #modal></app-modal>
+            <router-outlet></router-outlet>
+        </div>
+    </section>
+    <!-- Page footer-->
+    <!-- <footer app-footer></footer> -->
+</div>

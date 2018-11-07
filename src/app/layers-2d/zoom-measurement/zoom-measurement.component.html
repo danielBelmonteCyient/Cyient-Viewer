@@ -1,0 +1,6 @@
+<div class="pull-right">
+    <button *ngFor="let floatingButton of floatingButtons; let i = index" 
+        type="button" id="{{floatingButton.id}}" tooltip="{{floatingButton.id}}" 
+        class="mat-mini-fab {{floatingButton.icon}}" (click)="interaction($event)">
+    </button>
+</div>

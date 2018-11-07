@@ -1,0 +1,29 @@
+<div class="elements-left" id="content">
+        <nav class="navbar navbar-default" id='navigator'>
+                <div class="container-fluid">
+                   <img id="geospatial" src="assets/img/favicon.png" alt="">
+                    <div id="photos">                                                                                  
+                            <form class="form-inline">
+                                <select id="type">
+                                  <option value="length">Length (LineString)</option>
+                                  <option value="area">Area (Polygon)</option>
+                                </select>
+                              </form>                      
+                    </div>           
+                </div>
+            </nav>
+</div>
+<!-- <div class="elements-left">
+                <div class="ol-zoom ol-unselectable ol-control">
+                        <button class="ol-zoom-in mat-mini-fab" (click)="zoomIn()" type="button" title="Zoom in">+
+                        </button>
+                        <button class="ol-zoom-out mat-mini-fab" (click)="zoomOut()" type="button" title="Zoom out">−
+                        </button>
+                </div>
+        </div>
+<div class="elements-left">
+                        <select class="form-control" select (change)="onChange($event.target.value)" dropdownToggle>
+                                <option *ngFor="let crop of typesCrops">{{crop}}</option>
+                              </select>
+</div> -->
+<div id="map" class="map" style="overflow:hidden;"></div>

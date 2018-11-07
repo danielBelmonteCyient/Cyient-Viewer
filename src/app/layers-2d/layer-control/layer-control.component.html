@@ -1,0 +1,46 @@
+<div [style.display]="this.isLayerControlVisible ? 'block' : 'none'" class="panel" id='main-panel'>
+  <button type="button" class="close" (click)="openLayersControl()">
+          <span id="closing">&times;</span>
+  </button>
+  <div class="panel-body">
+                  <h3 class="cyientStyle" id="dinamicLayers">Layers</h3>
+                  <div id="wrappingCont">
+                      <div id="chooseLayer"><label class="layersName">Select your layers using the Pop Up...</label></div>                
+                     <div class="sliderContainer" *ngFor="let layer of layers; let i = index" id="block_container">
+                            <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-3 .col-md-2">
+                                    <label class="switch">
+                                        <input id="checkbox{{i}}" name = "{{layer.name}}" type="checkbox" (change)="updateChecked(i)" 
+                                            [checked] = "layer.visible"
+                                            [disabled] = "layer.disable">
+                                        <span class="slider"></span> 
+                                    </label>
+                                </div>
+                                <div class="col-xs-6 .col-md-8">
+                                    <button name = "button-{{layer.name}}" id="{{i}}" (click)="clicklayerName(i)"  class="astext" [disabled] = "layer.disable">{{ layer.name }}</button>                                           
+                                </div>
+                                <div class="col-xs-3 .col-md-2 iconsAwesome">
+                                        <ul class="fa-ul">
+                                                <li><span class="fa-li"><i class="fas fa-search-plus"></i></span></li>
+                                        </ul>  
+                                </div>                            
+                            </div>
+                            <!-- <a id="{{i}}" (click)="clicklayerName(i)" value="{{ layer.name }}"> -->
+                                <!-- <label class="layersName">{{ layer.name }}</label> -->
+                            <!-- </a>-->
+                        </div>
+                        </div>
+                </div> 
+          <h3 class="cyientStyle">Base Layers</h3>            
+          <div class="radio" *ngFor="let tileLayer of tileLayers; let i = index">
+              <label  class="radio layer">{{ tileLayer.name }}
+                  <input (click)="updateTileLayer(i)" id="{{ i }}" type="radio" name="is_company" [checked]="tileLayer.visible">
+                  <span class="checkround"></span>
+              </label>    
+          </div>
+  </div>
+</div>
+<button [style.display]="!this.isLayerControlVisible ? 'block' : 'none'" type="button" (click)="openLayersControl()"
+class="mat-mini-fab fas fa-layer-group">
+</button>  

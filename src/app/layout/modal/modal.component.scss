@@ -1,0 +1,127 @@
+// h3 {
+//     // display: inline;
+//     // font-size: 14px;
+// }
+
+// .cyientStyle {
+//     font-family:'Cyient Headline W';
+//     display: inline;
+//     color: #000;
+// }
+
+// /* The radio */
+// .sliderContainer{
+//     padding-left: 0;
+// }
+// .layersName{
+//     padding-left: 10px;
+//     color:black; 
+//     cursor: pointer;
+// }
+// .radio {
+//     margin-top: 0;
+//     display: block;
+//     position: relative;
+//     padding-left: 25px;
+//     cursor: pointer;
+//     color: #5d9cec;
+//     margin-bottom: 0; 
+// }
+
+// .layer{
+//     color:  black ;
+//     padding-top: 5px;
+//     padding-right: 15px;
+// }
+// /* Hide the browser's default radio button */
+// .radio input {
+//     position: absolute;
+//     opacity: 0;
+//     cursor: pointer;
+// }
+
+// /* Create a custom radio button */
+// .checkround {
+//     position: absolute;
+//     top: 6px;
+//     left: -15px;
+//     height: 20px;
+//     width: 20px;
+//     background-color: #fff ;
+//     border-color:#5d9cec;
+//     border-style:solid;
+//     border-width:2px;
+//     border-radius: 50%;
+// }
+
+
+// /* When the radio button is checked, add a blue background */
+// .radio input:checked ~ .checkround {
+//     background-color: #fff;
+// }
+
+// /* Create the indicator (the dot/circle - hidden when not checked) */
+// .checkround:after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+// }
+
+// /* Show the indicator (dot/circle) when checked */
+// .radio input:checked ~ .checkround:after {
+//     display: block;
+// }
+
+// /* Style the indicator (dot/circle) */
+// .radio .checkround:after {
+//     left: 2px;
+//     top: 2px;
+//     width: 12px;
+//     height: 12px;
+//     border-radius: 50%;
+//     background:#5d9cec;
+// }
+
+// .close{
+//     // padding-right: 4px;
+//     // opacity: 0.8;
+//     // box-shadow: 0 0 0 0 ;
+// }
+
+// #main-panel{
+//     transition: all 25s linear;
+//     background-color: #51c6ea;
+// }
+
+// button{
+//     // margin-bottom: 10px;
+//     // display: block;
+//     // box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+//     // color: black;
+//     // background-color: #51c6ea;
+// }
+
+// .mat-mini-fab {
+//     box-sizing: border-box;
+//     position: relative;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     cursor: pointer;
+//     border: none;
+//     -webkit-tap-highlight-color: transparent;
+//     margin-top: -5px;
+//     margin-right: 5px;
+//     min-width: 88px;
+//     line-height: 36px;
+//     padding: 0 16px;
+//     border-radius: 2px;
+//     overflow: visible;
+//     transform: translate3d(0,0,0);
+//     transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+//     min-width: 0;
+//     width: 40px;
+//     padding: 0;
+//     flex-shrink: 0;
+// }

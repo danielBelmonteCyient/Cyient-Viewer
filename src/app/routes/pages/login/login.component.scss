@@ -1,0 +1,43 @@
+.jumbotron.vertical-center {
+    margin-bottom: 0; 
+  }
+  .vertical-center {
+    min-height: 100%; 
+    min-height: 100vh; 
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;     
+    /* Align the bootstrap's container vertically */
+      -webkit-box-align : center;
+    -webkit-align-items : center;
+         -moz-box-align : center;
+         -ms-flex-align : center;
+            align-items : center;
+    width: 100%;    
+           -webkit-box-pack : center;
+              -moz-box-pack : center;
+              -ms-flex-pack : center;
+    -webkit-justify-content : center;
+            justify-content : center;
+  }
+
+  .panel-dark > .panel-heading {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #D9D9D6;
+
+  }
+
+  .panel-body{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9D9D6;
+  }
+
+  #signin-button{
+    background-color: #009CA6;
+  }
