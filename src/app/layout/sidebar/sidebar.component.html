@@ -4,18 +4,23 @@
             <li class="nav-heading" [routerLinkActive]="['active']">
                 <span >Main Navigation</span>            
             </li>
-            <li class="item.heading" [routerLinkActive]="['active']">
+            <li class="item-heading" [routerLinkActive]="['active']">
                 <a title="2D Viewer"
                     (click)="toggleSubmenuClick($event)" (mouseenter)="toggleSubmenuHover($event)">
                         <em class="icon-map" ></em>
                         <span>2D Viewer</span>
                 </a>
                 
-                <ul class="nav sidebar-subnav opening" [routerLinkActive]="['opening']">
+                <ul class="nav sidebar-subnav" [routerLinkActive]="['opening']">
                     <li class="sidebar-subnav-header">2D Viewer</li>
-                    <!-- <li class="nav-heading" [routerLinkActive]="['active']">
-                            <span >Layers</span>            
-                        </li> -->
+                        <!-- Layer selector inside 2D category -->
+                        <li class="sidebar-subnav-item" [routerLinkActive]="['active']">
+                            <a title="Select layers"
+                                (click)="toggleModal($event)">
+                                <em class="icon-plus"></em>
+                                <span>Select layers</span>
+                            </a>              
+                        </li>
                         <!-- <div class="radio" *ngFor="let layer of layers; let i = index">
                         <input id="check{{i}}" type="checkbox" (click)="addHero(i, layer.layerName )" [checked] = false>{{ layer.layerName }}
                         </div>                         -->
@@ -31,13 +36,13 @@
                         </div> -->
                 </ul>                
             </li>
-            <li class="item-heading" [routerLinkActive]="['active']">
+            <!-- <li class="item-heading" [routerLinkActive]="['active']">
                 <a title="2D Viewer"
                     (click)="toggleModal($event)">
                         <em class="icon-plus"></em>
                         <span>Open modal</span>
                 </a>          
-            </li>              
+            </li>               -->
         </ul>
     </nav>
 </div>
